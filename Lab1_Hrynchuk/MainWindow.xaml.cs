@@ -27,10 +27,10 @@ namespace KMA.Lab1_Hrynchuk.Lab1_Hrynchuk
 
             if (isValid)
             {
-                IsTodayBirthDay(userAge, selectedDate);
                 userAgeField.Text = $"You are {userAge} years old!";
                 userWestZodiac.Text = $"You are {CalcUserWestZodiacSign(selectedDate)} by West Zodiac system!";
                 userChineseZodiac.Text = $"You are {CalcUserChineseZodiacSign(selectedDate)} by Chinese Zodiac system!";
+                IsTodayBirthDay(userAge, selectedDate);
             }
             else
             {
