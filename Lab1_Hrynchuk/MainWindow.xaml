@@ -1,0 +1,24 @@
+﻿<Window x:Class="KMA.Lab1_Hrynchuk.Lab1_Hrynchuk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMA.Lab1_Hrynchuk.Lab1_Hrynchuk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="355" Width="600">
+    <Grid>
+        <TextBlock Text="Welcome to app! Here you can calc your age and zodiacs!"  HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"  Margin="0,30,0,0"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <Border BorderThickness="2" BorderBrush="Black" CornerRadius="8" Padding="4,4,4,4">
+                    <DatePicker x:Name="datePicker" SelectedDateChanged="DatePicker_SelectedDateChanged" FontSize="16" FontWeight="Bold" BorderThickness="0"/>
+                </Border>
+            </StackPanel>
+            <TextBlock x:Name="userAgeField" Text="" FontSize="15" Margin="0,20,0,0"/>
+            <TextBlock x:Name="userWestZodiac" Text="" FontSize="15" Margin="0,20,0,0"/>
+            <TextBlock x:Name="userChineseZodiac" Text="" FontSize="15" Margin="0,20,0,0"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
